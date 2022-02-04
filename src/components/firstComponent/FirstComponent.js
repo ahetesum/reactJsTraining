@@ -1,8 +1,8 @@
 import "./FirstComponent.css";
-const FirstComponent = () => {
-    const itemDate= new Date(2022,2,27);
-    const itemTitle="Car Insurence";
-    const itemAmount=750.00
+const FirstComponent = (props) => {
+    const itemDate= props.date;
+    const itemTitle=props.title;
+    const itemAmount=props.amount;
 
 
   return (
