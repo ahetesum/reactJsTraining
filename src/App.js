@@ -6,6 +6,9 @@ const App=()=> {
     <div className="App">
        <h1>Hello React</h1>
        <FirstComponent />
+       <FirstComponent />
+       <FirstComponent />
+       <FirstComponent />
     </div>
   );
 }

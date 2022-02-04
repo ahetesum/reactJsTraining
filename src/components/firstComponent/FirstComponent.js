@@ -1,11 +1,16 @@
 import "./FirstComponent.css";
 const FirstComponent = () => {
+    const itemDate= new Date(2022,2,27);
+    const itemTitle="Car Insurence";
+    const itemAmount=750.00
+
+
   return (
     <div className="first-item">
-      <div>27th Feb 2022</div>
+      <div>{itemDate.toISOString()}</div>
       <div className="first-item__description">
-        <h2>I am First Item</h2>
-        <div className="first-item__price">2575.00</div>
+        <h2>{itemTitle}</h2>
+        <div className="first-item__price">Rs. {itemAmount}</div>
       </div>
     </div>
   );
